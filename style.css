@@ -1,0 +1,431 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: o;
+    list-style: none;
+}
+body{
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Helvetica, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", メイリオ, Meiryo, "ＭＳ Ｐゴシック", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    
+}
+header{
+    display: flex;
+    background-color: white;
+    justify-content: space-between;
+    align-items: center;
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 80px;
+    padding: 4px 16px;
+    position: fixed;
+    top:0;
+    overflow: hidden;
+    z-index: 1;
+}
+#pinterest-icon img{
+    
+    height: 30px;
+    width: 30px;
+    justify-content: center;
+    
+}
+
+#pinterest-icon {
+    /* border: 1px solid gray; */
+    width: 50px;
+    justify-content: center;
+}
+.navbar-pinterest{
+    display: flex;
+    flex-grow: 1;
+    /* border: 1px solid darkcyan; */
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+   
+}
+.buscador{
+    display: flex;
+    flex-grow: 10;
+    /* border: 1px solid violet; */
+    height: 100%;
+    align-items: center;
+    
+
+}
+.navegador2{
+    display: flex;
+    width: 10%;
+    /* border: 1px solid red; */
+    /* justify-content: space-evenly; */
+    height: 56px;
+    align-items: center;
+    justify-content:center;
+    
+}
+.navegador2 li{
+    display: flex;
+    /* justify-content: space-between; */
+    /* border: 1px solid violet; */
+    height: 100%;
+    /* width:100; */
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    /* margin: 15px; */
+    
+}
+
+.navegador2 li:hover{
+    background-color: rgb(160, 157, 157);
+    border-radius: 50%;
+    
+
+}
+
+
+.contenedor_buscador{
+    display: flex;
+    height: 56px;
+    /* border: 1px solid green ; */
+    width: 90%;
+    align-items: center;
+    min-width: 407px;
+    
+}
+.contenedor_buscador a{
+    display: flex;
+    height:100%;
+    /* border: 1px solid red; */
+    align-items: center;
+}
+.contenedor_buscador img{
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+}
+.finder{
+    display: flex;
+    border-radius: 30px;
+    border: none;
+    align-items: center;
+    background-color: rgb(183, 177, 177);
+    /* opacity: 0.7; */
+    width: 100%;
+    height: 80%;
+    
+    
+}
+.navbar-pinterest li{
+    display: flex;
+    justify-content: center;
+    flex-grow: 2; 
+    text-decoration: none;
+    
+    
+}
+.navbar-pinterest li:hover{
+    border: 1px black solid;
+    border-radius: 24px;
+    color: white;
+    font-weight: bold;
+    background-color: black;
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+    text-decoration: none;
+}
+.navbar-pinterest a{
+    color: black;
+    text-decoration: none;
+}
+.navbar-pinterest a:hover{
+    color: white;
+    
+}
+
+.gallery{
+    
+    margin: 20px auto;
+    width: 1200px;
+    column-count: 5;
+    column-gap: 10px;
+
+
+}
+
+.card-image{
+    width:235px;
+    padding: 0px 8px 16px;
+    /* background-color: #f1f1f1; */
+    /* border: 1px solid grey; */
+    margin-bottom: 10px;
+    break-inside: avoid;
+    cursor: pointer;
+    
+    
+}
+.card-image img{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    border-radius: 15px;
+    
+}
+
+.card-image:hover{
+    opacity: 0.8;
+    /* background-color: black; */
+    
+
+}
+
+#content{
+    padding-top: 4rem;
+}
+
+.contenedor_img{
+    /* border: 1px green solid; */
+    position: relative;
+}
+
+
+.top_button{
+    
+    position:absolute;
+    border: 1px red solid;
+    /* margin-right: 50px; */
+    /* margin-left:120px; */
+    top: 10px; 
+    right: 10px;
+    border-radius: 20px;
+    /* height: 40px; */
+    /* width: 80px; */
+    padding: 10px 10px;
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    /* visibility: hidden; */
+    opacity: 0;
+    cursor: pointer;
+    
+  
+}
+.bottom_button{
+    position: absolute;
+    /* margin-top: 270px; */
+    /* margin-left: 110px; */
+    border-radius: 30px;
+    bottom: 15px;
+    right: 55px;
+    padding: 8px 9px;
+    /* height: 40px; */
+    /* width: 40px; */
+    border: none;
+    /* visibility: hidden; */
+    opacity: 0;
+    cursor: pointer;
+    
+}
+.bottom_button2{
+    position: absolute;
+    /* height: 40px; */
+    /* width: 40px; */
+    border-radius: 30px;
+    border: none;
+    bottom: 15px;
+    right: 10px;
+    padding: 8px 9px;
+    /* margin-top: 270px; */
+    /* margin-left: 160px; */
+    /* visibility: hidden; */
+    opacity: 0;
+    cursor: pointer;
+}
+
+.contenedor_img:hover > .top_button {
+    opacity: 1;
+    visibility: visible;
+    
+
+}
+
+.contenedor_img:hover > .bottom_button{
+    opacity: 1;
+    visibility: visible;
+}
+
+.contenedor_img:hover > .bottom_button2{
+    opacity: 1;
+    visibility: visible;
+}
+
+@media screen and (max-width:1000px){
+
+
+    .gallery{
+        margin-left: 60px;
+        /* padding: 0px 0px 24px; */
+        width: 80%;
+        column-count: 3;
+        column-gap: 10px;
+        /* border: 1px solid green; */
+    }
+
+
+    .card-image{
+        width:100%;
+        padding: 0px 3px 5px;
+        /* background-color: #f1f1f1; */
+        /* border: 1px solid grey; */
+        margin-bottom: 10px;
+        break-inside: avoid;
+        cursor: pointer;
+    
+    }
+
+    .buscador{
+        display: flex;
+        flex-grow: 10;
+        /* border: 1px solid violet; */
+        height: 100%;
+        align-items: center;
+        width: 10%;
+        
+    
+    }
+    .navegador2{
+        display: flex;
+        width: 30%;
+        /* border: 1px solid red; */
+        /* justify-content: space-evenly; */
+        height: 56px;
+        align-items: center;
+        justify-content:center;
+        
+    }
+
+    .navegador2 li{
+        display: flex;
+        /* justify-content: space-between; */
+        /* border: 1px solid violet; */
+        height: 100%;
+        /* width:100; */
+        flex-grow: 1;
+        justify-content: center;
+        align-items: center;
+        /* margin: 15px; */
+        
+    }
+
+    .top_button{
+    
+        position:absolute;
+        border: 1px red solid;
+        /* margin-right: 50px; */
+        /* margin-left:16%; */
+        /* margin-top: 3%;  */
+        border-radius: 20px;
+        /* height: 5%; */
+        /* width: 8%; */
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        /* visibility: hidden; */
+        opacity: 0;
+        cursor: pointer;
+        
+      
+    }
+
+    .bottom_button{
+        position: absolute;
+        /* margin-top: 31%; */
+        /* margin-left: 15%; */
+        border-radius: 30px;
+        /* height:4%; */
+        /* width: 4%; */
+        border: none;
+        /* visibility: hidden; */
+        opacity: 0;
+        cursor: pointer;
+        padding: 12px 12px;
+        
+    }
+    .bottom_button2{
+        position: absolute;
+        /* height: 4%; */
+        /* width: 4%; */
+        border-radius: 30px;
+        border: none;
+        /* margin-top: 31%; */
+        /* margin-left: 20%; */
+        padding: 12px 12px;
+        /* visibility: hidden; */
+        opacity: 0;
+        cursor: pointer;
+    }
+}
+
+@media screen and (max-width:700px){
+    .gallery{
+        margin-left: 60px;
+        /* padding: 0px 0px 24px; */
+        width: 80%;
+        column-count: 2;
+        column-gap: 10px;
+        /* border: 1px solid green; */
+    }
+
+    .top_button{
+    
+        position:absolute;
+        border: 1px red solid;
+        /* margin-right: 50px; */
+        /* margin-left:18%; */
+        /* margin-top: 3%%;  */
+        right: 10px;
+        top:10px;
+        border-radius: 20px;
+        /* height: 5%; */
+        /* width: 18%; */
+        background-color: red;
+        color: white;
+        font-weight: bold;
+        /* visibility: hidden; */
+        opacity: 0;
+        cursor: pointer;
+        
+      
+    }
+
+
+    .bottom_button{
+        position: absolute;
+        /* margin-top: 47%; */
+        /* margin-left: 18%; */
+        border-radius: 30px;
+        /* height:5.6%; */
+        /* width: 7%; */
+        border: none;
+        /* visibility: hidden; */
+        opacity: 0;
+        cursor: pointer;
+        padding: 15px 15px;
+        
+    }
+
+    .bottom_button2{
+        position: absolute;
+        /* height: 5.6%; */
+        /* width: 7%; */
+        border-radius: 30px;
+        border: none;
+        /* margin-top: 47%; */
+        /* margin-left: 28%; */
+        /* visibility: hidden; */
+        opacity: 0;
+        cursor: pointer;
+        padding: 15px 15px;
+    }
+}
